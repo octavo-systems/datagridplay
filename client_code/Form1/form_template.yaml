@@ -1,0 +1,28 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: DataGrid
+  properties:
+    role: null
+    columns:
+    - {id: KUGJQR, title: SIFTER, data_key: SIFTER, $$hashKey: 'object:3638'}
+    auto_header: true
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: true
+    wrap_on: never
+    show_page_controls: true
+    spacing_above: small
+    spacing_below: small
+    background: ''
+  name: tbl
+  layout_properties: {grid_position: 'OTBQUC,CNXTSP'}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: Form1.RowTemplate1}
+    name: sifterrows
+    layout_properties: {}
+is_package: true
