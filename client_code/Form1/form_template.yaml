@@ -6,7 +6,7 @@ components:
   properties:
     role: null
     columns:
-    - {id: KUGJQR, title: SIFTER, data_key: SIFTER, $$hashKey: 'object:3638'}
+    - {id: KUGJQR, title: SIFTER, data_key: sifter, $$hashKey: 'object:3638'}
     auto_header: true
     tooltip: ''
     border: ''
