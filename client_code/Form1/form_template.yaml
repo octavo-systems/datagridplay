@@ -2,6 +2,16 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
+- name: test_copy
+  properties: {}
+  type: TextBox
+  layout_properties: {grid_position: 'OTBQUC,ZTFAVX WEXMQW,UFVYOX'}
+  event_bindings: {change: test_copy_change}
+- name: clippy
+  properties: {text: Copy}
+  type: Button
+  layout_properties: {grid_position: 'OTBQUC,ZTFAVX DVYSBI,EACZBS'}
+  event_bindings: {click: clippy_click}
 - type: DataGrid
   properties:
     role: null

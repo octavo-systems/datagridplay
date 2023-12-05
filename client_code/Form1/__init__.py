@@ -1,5 +1,7 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+from anvil.js.window import navigator
+
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -23,5 +25,11 @@ class Form1(Form1Template):
     #self.sifterrows.items.extend( normal )
     #self.sifterrows.items.extend( low )    
     #self.sifterrows.items.extend( trivial )
+
+
+  def clippy_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    navigator.clipboard.writeText(self.test_copy.text)
+    pass
 
 
